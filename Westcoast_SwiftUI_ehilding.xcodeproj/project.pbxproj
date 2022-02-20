@@ -15,7 +15,12 @@
 		12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */; };
 		12E9288227C2597F00BF2ECD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288127C2597F00BF2ECD /* CategoryModel.swift */; };
 		12E9288427C2598900BF2ECD /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288327C2598900BF2ECD /* CourseModel.swift */; };
-		12E9288627C259E900BF2ECD /* CategoryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288527C259E900BF2ECD /* CategoryListScreen.swift */; };
+		12E9288827C25DE900BF2ECD /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288727C25DE900BF2ECD /* CategoryListViewModel.swift */; };
+		12E9288A27C25EBC00BF2ECD /* CoursesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288927C25EBC00BF2ECD /* CoursesListViewModel.swift */; };
+		12E9288C27C25F9000BF2ECD /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288B27C25F9000BF2ECD /* CategoryListView.swift */; };
+		12E9288E27C260EA00BF2ECD /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288D27C260EA00BF2ECD /* CategoryCard.swift */; };
+		12E9289427C2773D00BF2ECD /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9289327C2773D00BF2ECD /* CategoryService.swift */; };
+		12E9289627C281E900BF2ECD /* CategoryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9289527C281E900BF2ECD /* CategoryListScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +33,12 @@
 		12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListsScreen.swift; sourceTree = "<group>"; };
 		12E9288127C2597F00BF2ECD /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		12E9288327C2598900BF2ECD /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
-		12E9288527C259E900BF2ECD /* CategoryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListScreen.swift; sourceTree = "<group>"; };
+		12E9288727C25DE900BF2ECD /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		12E9288927C25EBC00BF2ECD /* CoursesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesListViewModel.swift; sourceTree = "<group>"; };
+		12E9288B27C25F9000BF2ECD /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		12E9288D27C260EA00BF2ECD /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
+		12E9289327C2773D00BF2ECD /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
+		12E9289527C281E900BF2ECD /* CategoryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +71,11 @@
 		12E9286227C252A900BF2ECD /* Westcoast_SwiftUI_ehilding */ = {
 			isa = PBXGroup;
 			children = (
+				12E9287127C2559A00BF2ECD /* Screens */,
 				12E9287427C255AD00BF2ECD /* Views */,
 				12E9287327C255A500BF2ECD /* ViewModels */,
+				12E9289227C2773200BF2ECD /* Services */,
 				12E9287227C2559F00BF2ECD /* Models */,
-				12E9287127C2559A00BF2ECD /* Screens */,
 				12E9286327C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift */,
 				12E9286727C252AA00BF2ECD /* Assets.xcassets */,
 				12E9286927C252AA00BF2ECD /* Preview Content */,
@@ -86,7 +97,7 @@
 				12E9287B27C2565E00BF2ECD /* HomeScreen.swift */,
 				12E9287D27C2566700BF2ECD /* WelcomeScreen.swift */,
 				12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */,
-				12E9288527C259E900BF2ECD /* CategoryListScreen.swift */,
+				12E9289527C281E900BF2ECD /* CategoryListScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -103,6 +114,8 @@
 		12E9287327C255A500BF2ECD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				12E9288727C25DE900BF2ECD /* CategoryListViewModel.swift */,
+				12E9288927C25EBC00BF2ECD /* CoursesListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,8 +123,18 @@
 		12E9287427C255AD00BF2ECD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12E9288B27C25F9000BF2ECD /* CategoryListView.swift */,
+				12E9288D27C260EA00BF2ECD /* CategoryCard.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		12E9289227C2773200BF2ECD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				12E9289327C2773D00BF2ECD /* CategoryService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +210,14 @@
 				12E9288427C2598900BF2ECD /* CourseModel.swift in Sources */,
 				12E9286427C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift in Sources */,
 				12E9287E27C2566700BF2ECD /* WelcomeScreen.swift in Sources */,
+				12E9289427C2773D00BF2ECD /* CategoryService.swift in Sources */,
 				12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */,
+				12E9288C27C25F9000BF2ECD /* CategoryListView.swift in Sources */,
+				12E9288827C25DE900BF2ECD /* CategoryListViewModel.swift in Sources */,
 				12E9288227C2597F00BF2ECD /* CategoryModel.swift in Sources */,
-				12E9288627C259E900BF2ECD /* CategoryListScreen.swift in Sources */,
+				12E9288A27C25EBC00BF2ECD /* CoursesListViewModel.swift in Sources */,
+				12E9289627C281E900BF2ECD /* CategoryListScreen.swift in Sources */,
+				12E9288E27C260EA00BF2ECD /* CategoryCard.swift in Sources */,
 				12E9287C27C2565E00BF2ECD /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

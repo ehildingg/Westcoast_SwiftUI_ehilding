@@ -17,11 +17,17 @@ struct HomeScreen: View {
                     Text("Home")
                 }
             
-            CourseListsScreen()
+            CategoryListScreen()
                 .tabItem{
                     Image(systemName: "books.vertical.circle")
-                    Text("Courses")
+                    Text("Categories")
                 }
+            
+//            CourseListsScreen(category: categories)
+//                .tabItem{
+//                    Image(systemName: "books.vertical.circle")
+//                    Text("Courses")
+//                }
         }
     
     }
