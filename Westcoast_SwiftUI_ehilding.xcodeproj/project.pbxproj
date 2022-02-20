@@ -24,6 +24,8 @@
 		12E928A227C29BFC00BF2ECD /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A127C29BFC00BF2ECD /* CourseListView.swift */; };
 		12E928A427C29C0600BF2ECD /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A327C29C0600BF2ECD /* CourseCard.swift */; };
 		12E928A727C29DF600BF2ECD /* CourseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A627C29DF600BF2ECD /* CourseMapper.swift */; };
+		12E928A927C2AC0700BF2ECD /* CourseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */; };
+		12E928AB27C2AC1D00BF2ECD /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928AA27C2AC1D00BF2ECD /* CourseDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		12E928A127C29BFC00BF2ECD /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		12E928A327C29C0600BF2ECD /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
 		12E928A627C29DF600BF2ECD /* CourseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapper.swift; sourceTree = "<group>"; };
+		12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailScreen.swift; sourceTree = "<group>"; };
+		12E928AA27C2AC1D00BF2ECD /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				12E9287D27C2566700BF2ECD /* WelcomeScreen.swift */,
 				12E9289527C281E900BF2ECD /* CategoryListScreen.swift */,
 				12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */,
+				12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				12E9288D27C260EA00BF2ECD /* CategoryCard.swift */,
 				12E928A127C29BFC00BF2ECD /* CourseListView.swift */,
 				12E928A327C29C0600BF2ECD /* CourseCard.swift */,
+				12E928AA27C2AC1D00BF2ECD /* CourseDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 				12E9286427C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift in Sources */,
 				12E928A727C29DF600BF2ECD /* CourseMapper.swift in Sources */,
 				12E9287E27C2566700BF2ECD /* WelcomeScreen.swift in Sources */,
+				12E928AB27C2AC1D00BF2ECD /* CourseDetailView.swift in Sources */,
 				12E9289427C2773D00BF2ECD /* CategoryService.swift in Sources */,
 				12E928A427C29C0600BF2ECD /* CourseCard.swift in Sources */,
 				12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */,
+				12E928A927C2AC0700BF2ECD /* CourseDetailScreen.swift in Sources */,
 				12E9288C27C25F9000BF2ECD /* CategoryListView.swift in Sources */,
 				12E9288827C25DE900BF2ECD /* CategoryListViewModel.swift in Sources */,
 				12E9288227C2597F00BF2ECD /* CategoryModel.swift in Sources */,

@@ -18,7 +18,7 @@ struct CategoryListView: View {
                 CategoryCard(category: category)
             }
         }
-        .navigationTitle("Course Categories")
+        .navigationTitle("Categories")
     }
 }
 

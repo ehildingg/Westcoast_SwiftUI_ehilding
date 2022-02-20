@@ -12,7 +12,7 @@ struct CourseCard: View {
     var course: Courses
     
     var body: some View {
-        HStack {
+        HStack (spacing: 20) {
             Image(course.courseImage)
                 .resizable()
                 .scaledToFit()
@@ -29,6 +29,9 @@ struct CourseCard: View {
                 Text(course.courseShortDescription)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.5)
+                
             }
             
         }

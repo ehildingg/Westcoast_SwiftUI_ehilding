@@ -13,7 +13,7 @@ struct CategoryCard: View {
 
     var body: some View {
         
-        HStack {
+        HStack (spacing: 20){
             Image(category.categoryImage)
                 .resizable()
                 .scaledToFit()
@@ -30,6 +30,8 @@ struct CategoryCard: View {
                 Text(category.categoryDescription)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+                    .minimumScaleFactor(0.5)
+                    .multilineTextAlignment(.center)
             }
             
         }

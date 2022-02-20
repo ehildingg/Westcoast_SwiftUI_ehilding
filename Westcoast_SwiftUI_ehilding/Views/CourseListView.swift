@@ -14,10 +14,12 @@ struct CourseListView: View {
     var body: some View {
         List(courseList, id: \.id) {
             course in
+            NavigationLink(destination: CourseDetailScreen(course: course)) {
                 CourseCard(course: course)
+            }
         }.navigationTitle("Courses")
-        }
     }
+}
 
 //struct CourseListView_Previews: PreviewProvider {
 //    static var previews: some View {
