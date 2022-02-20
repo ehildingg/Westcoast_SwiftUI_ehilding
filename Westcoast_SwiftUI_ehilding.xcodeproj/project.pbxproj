@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		12E9286427C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9286327C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift */; };
-		12E9286627C252A900BF2ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9286527C252A900BF2ECD /* ContentView.swift */; };
 		12E9286827C252AA00BF2ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9286727C252AA00BF2ECD /* Assets.xcassets */; };
 		12E9286B27C252AA00BF2ECD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9286A27C252AA00BF2ECD /* Preview Assets.xcassets */; };
+		12E9287C27C2565E00BF2ECD /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9287B27C2565E00BF2ECD /* HomeScreen.swift */; };
+		12E9287E27C2566700BF2ECD /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9287D27C2566700BF2ECD /* WelcomeScreen.swift */; };
+		12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */; };
+		12E9288227C2597F00BF2ECD /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288127C2597F00BF2ECD /* CategoryModel.swift */; };
+		12E9288427C2598900BF2ECD /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288327C2598900BF2ECD /* CourseModel.swift */; };
+		12E9288627C259E900BF2ECD /* CategoryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9288527C259E900BF2ECD /* CategoryListScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12E9286027C252A900BF2ECD /* Westcoast_SwiftUI_ehilding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westcoast_SwiftUI_ehilding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E9286327C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Westcoast_SwiftUI_ehildingApp.swift; sourceTree = "<group>"; };
-		12E9286527C252A900BF2ECD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12E9286727C252AA00BF2ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E9286A27C252AA00BF2ECD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12E9287B27C2565E00BF2ECD /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		12E9287D27C2566700BF2ECD /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListsScreen.swift; sourceTree = "<group>"; };
+		12E9288127C2597F00BF2ECD /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		12E9288327C2598900BF2ECD /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		12E9288527C259E900BF2ECD /* CategoryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		12E9286227C252A900BF2ECD /* Westcoast_SwiftUI_ehilding */ = {
 			isa = PBXGroup;
 			children = (
+				12E9287427C255AD00BF2ECD /* Views */,
+				12E9287327C255A500BF2ECD /* ViewModels */,
+				12E9287227C2559F00BF2ECD /* Models */,
+				12E9287127C2559A00BF2ECD /* Screens */,
 				12E9286327C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift */,
-				12E9286527C252A900BF2ECD /* ContentView.swift */,
 				12E9286727C252AA00BF2ECD /* Assets.xcassets */,
 				12E9286927C252AA00BF2ECD /* Preview Content */,
 			);
@@ -65,6 +78,40 @@
 				12E9286A27C252AA00BF2ECD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		12E9287127C2559A00BF2ECD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				12E9287B27C2565E00BF2ECD /* HomeScreen.swift */,
+				12E9287D27C2566700BF2ECD /* WelcomeScreen.swift */,
+				12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */,
+				12E9288527C259E900BF2ECD /* CategoryListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		12E9287227C2559F00BF2ECD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12E9288127C2597F00BF2ECD /* CategoryModel.swift */,
+				12E9288327C2598900BF2ECD /* CourseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12E9287327C255A500BF2ECD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		12E9287427C255AD00BF2ECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E9286627C252A900BF2ECD /* ContentView.swift in Sources */,
+				12E9288427C2598900BF2ECD /* CourseModel.swift in Sources */,
 				12E9286427C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift in Sources */,
+				12E9287E27C2566700BF2ECD /* WelcomeScreen.swift in Sources */,
+				12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */,
+				12E9288227C2597F00BF2ECD /* CategoryModel.swift in Sources */,
+				12E9288627C259E900BF2ECD /* CategoryListScreen.swift in Sources */,
+				12E9287C27C2565E00BF2ECD /* HomeScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
