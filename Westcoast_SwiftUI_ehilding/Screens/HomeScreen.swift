@@ -22,12 +22,6 @@ struct HomeScreen: View {
                     Image(systemName: "books.vertical.circle")
                     Text("Categories")
                 }
-            
-//            CourseListsScreen(category: categories)
-//                .tabItem{
-//                    Image(systemName: "books.vertical.circle")
-//                    Text("Courses")
-//                }
         }
     
     }

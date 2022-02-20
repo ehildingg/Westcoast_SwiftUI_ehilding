@@ -14,7 +14,7 @@ struct CategoryListView: View {
     var body: some View {
         List(categories, id: \.id) {
             category in
-            NavigationLink(destination: CourseListsScreen(category: category)) {
+            NavigationLink(destination: CourseListsScreen(courses: category.courses)) {
                 CategoryCard(category: category)
             }
         }

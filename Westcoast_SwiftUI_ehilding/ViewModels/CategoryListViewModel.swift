@@ -13,7 +13,7 @@ class CategoryListViewModel: ObservableObject {
     
     func getAllCategories() {
         
-        let categories = sharedVehicleService.initializeCategories()
+        let categories = sharedCategoryService.initializeCategories()
         
         self.categorieList = categories.map(CategoryViewModel.init)
         

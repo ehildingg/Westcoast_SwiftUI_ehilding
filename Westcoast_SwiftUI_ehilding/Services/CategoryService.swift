@@ -7,9 +7,9 @@
 
 import Foundation
 
-let sharedVehicleService = VehicleService()
+let sharedCategoryService = CategoryService()
 
-class VehicleService {
+class CategoryService {
     
     init() {}
     
