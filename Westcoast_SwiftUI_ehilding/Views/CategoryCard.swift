@@ -32,7 +32,7 @@ struct CategoryCard: View {
                     .foregroundColor(.secondary)
             }
             
-        }.background(Color.white)
+        }
             
             .cornerRadius(10)
             .padding()
