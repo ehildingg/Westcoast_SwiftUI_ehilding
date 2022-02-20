@@ -23,9 +23,9 @@
 		12E9289627C281E900BF2ECD /* CategoryListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9289527C281E900BF2ECD /* CategoryListScreen.swift */; };
 		12E928A227C29BFC00BF2ECD /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A127C29BFC00BF2ECD /* CourseListView.swift */; };
 		12E928A427C29C0600BF2ECD /* CourseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A327C29C0600BF2ECD /* CourseCard.swift */; };
-		12E928A727C29DF600BF2ECD /* CourseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A627C29DF600BF2ECD /* CourseMapper.swift */; };
 		12E928A927C2AC0700BF2ECD /* CourseDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */; };
 		12E928AB27C2AC1D00BF2ECD /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928AA27C2AC1D00BF2ECD /* CourseDetailView.swift */; };
+		12E928AD27C2D3DD00BF2ECD /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E928AC27C2D3DD00BF2ECD /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,9 +46,9 @@
 		12E9289527C281E900BF2ECD /* CategoryListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListScreen.swift; sourceTree = "<group>"; };
 		12E928A127C29BFC00BF2ECD /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		12E928A327C29C0600BF2ECD /* CourseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCard.swift; sourceTree = "<group>"; };
-		12E928A627C29DF600BF2ECD /* CourseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseMapper.swift; sourceTree = "<group>"; };
 		12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailScreen.swift; sourceTree = "<group>"; };
 		12E928AA27C2AC1D00BF2ECD /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+		12E928AC27C2D3DD00BF2ECD /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,6 @@
 		12E9286227C252A900BF2ECD /* Westcoast_SwiftUI_ehilding */ = {
 			isa = PBXGroup;
 			children = (
-				12E928A527C29DEA00BF2ECD /* Helpers */,
 				12E9287127C2559A00BF2ECD /* Screens */,
 				12E9287427C255AD00BF2ECD /* Views */,
 				12E9287327C255A500BF2ECD /* ViewModels */,
@@ -110,6 +109,7 @@
 				12E9289527C281E900BF2ECD /* CategoryListScreen.swift */,
 				12E9287F27C257F500BF2ECD /* CourseListsScreen.swift */,
 				12E928A827C2AC0700BF2ECD /* CourseDetailScreen.swift */,
+				12E928AC27C2D3DD00BF2ECD /* ProfileScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -150,14 +150,6 @@
 				12E9289327C2773D00BF2ECD /* CategoryService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		12E928A527C29DEA00BF2ECD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				12E928A627C29DF600BF2ECD /* CourseMapper.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,11 +224,11 @@
 			files = (
 				12E9288427C2598900BF2ECD /* CourseModel.swift in Sources */,
 				12E9286427C252A900BF2ECD /* Westcoast_SwiftUI_ehildingApp.swift in Sources */,
-				12E928A727C29DF600BF2ECD /* CourseMapper.swift in Sources */,
 				12E9287E27C2566700BF2ECD /* WelcomeScreen.swift in Sources */,
 				12E928AB27C2AC1D00BF2ECD /* CourseDetailView.swift in Sources */,
 				12E9289427C2773D00BF2ECD /* CategoryService.swift in Sources */,
 				12E928A427C29C0600BF2ECD /* CourseCard.swift in Sources */,
+				12E928AD27C2D3DD00BF2ECD /* ProfileScreen.swift in Sources */,
 				12E9288027C257F500BF2ECD /* CourseListsScreen.swift in Sources */,
 				12E928A927C2AC0700BF2ECD /* CourseDetailScreen.swift in Sources */,
 				12E9288C27C25F9000BF2ECD /* CategoryListView.swift in Sources */,

@@ -24,7 +24,7 @@ struct Courses: Identifiable  {
     }
 }
 
-    let dummyShortDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum."
+    let dummyShortDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     let dummyLongDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut."
     
     let cSharp = Courses(name: "C#",

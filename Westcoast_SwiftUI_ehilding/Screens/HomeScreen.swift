@@ -13,16 +13,20 @@ struct HomeScreen: View {
         TabView {
             WelcomeScreen()
                 .tabItem {
-                    Image(systemName: "house.circle")
-                    Text("Home")
+                    Label("Home", systemImage: "house.circle")
                 }
             
             CategoryListScreen()
                 .tabItem{
-                    Image(systemName: "books.vertical.circle")
-                    Text("Categories")
+                    Label("Categories", systemImage: "books.vertical.circle")
                 }
-        }
+            
+            ProfileScreen()
+                .tabItem{
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
+        }.accentColor(.blue)
+            .background(.black)
     
     }
 }
@@ -30,5 +34,6 @@ struct HomeScreen: View {
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
+.previewInterfaceOrientation(.landscapeRight)
     }
 }

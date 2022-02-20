@@ -17,7 +17,8 @@ struct CourseListView: View {
             NavigationLink(destination: CourseDetailScreen(course: course)) {
                 CourseCard(course: course)
             }
-        }.navigationTitle("Courses")
+        }
+        .navigationTitle("Courses")
     }
 }
 

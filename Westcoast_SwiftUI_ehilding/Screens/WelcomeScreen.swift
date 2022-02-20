@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
+    
+//    @Environment(\.horizontalSizeClass) var sizeClass
+    
     var body: some View {
+    
         ZStack {
-            Image("home_background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .ignoresSafeArea(edges: .top)
-                .ignoresSafeArea(edges: .horizontal)
+            
+//            if sizeClass == .compact {
+                HomescreenPortraitView()
+//            } else if sizeClass == .regular {
+//                HomescreenLandscapeView()
+//            }
+            
+            VStack {
+                Text("Westcoast Education")
+                    .font(.system(size: 48))
+                    .foregroundColor(.white)
+                    .fontWeight(.semibold)
+                    .padding()
+                Text("Inspirational Quote")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+            }.padding(.horizontal)
+                .shadow(color: .black, radius: 3)
+            
         }
     }
 }
@@ -22,5 +40,26 @@ struct WelcomeScreen: View {
 struct WelcomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeScreen()
+    }
+}
+
+struct HomescreenPortraitView: View {
+    var body: some View {
+        Image("home_background")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .ignoresSafeArea(edges: .top)
+            .ignoresSafeArea(edges: .horizontal)
+    }
+}
+
+struct HomescreenLandscapeView: View {
+    var body: some View {
+        Image("home_background")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .ignoresSafeArea(edges: .top)
+            .ignoresSafeArea(edges: .horizontal)
+
     }
 }

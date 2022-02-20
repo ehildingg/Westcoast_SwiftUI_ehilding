@@ -23,6 +23,3 @@ struct Category: Identifiable {
        
     }
 }
-
-
-
