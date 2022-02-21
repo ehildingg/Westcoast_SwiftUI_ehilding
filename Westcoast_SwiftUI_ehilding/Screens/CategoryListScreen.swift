@@ -9,11 +9,14 @@ import SwiftUI
 
 struct CategoryListScreen: View {
     
+    
+    
     @ObservedObject private var categoryListViewModel: CategoryListViewModel
     
     init() {
         categoryListViewModel = CategoryListViewModel()
         categoryListViewModel.getAllCategories()
+        
     }
     
     var body: some View {

@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct HomeScreen: View {
+
+    init() {UITabBar.appearance().backgroundColor = .white}
+    
     var body: some View {
-        
         TabView {
             WelcomeScreen()
                 .tabItem {
                     Label("Home", systemImage: "house.circle")
                 }
-            
             CategoryListScreen()
                 .tabItem{
                     Label("Categories", systemImage: "books.vertical.circle")
@@ -26,8 +27,6 @@ struct HomeScreen: View {
                     Label("Profile", systemImage: "person.crop.circle")
                 }
         }.accentColor(.blue)
-            .background(.black)
-    
     }
 }
 

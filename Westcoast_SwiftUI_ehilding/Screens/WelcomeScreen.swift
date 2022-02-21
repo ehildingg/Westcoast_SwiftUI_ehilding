@@ -12,15 +12,15 @@ struct WelcomeScreen: View {
 //    @Environment(\.horizontalSizeClass) var sizeClass
     
     var body: some View {
-    
+        
         ZStack {
+            HomescreenPortraitView()
             
-//            if sizeClass == .compact {
-                HomescreenPortraitView()
-//            } else if sizeClass == .regular {
-//                HomescreenLandscapeView()
-//            }
-            
+//                        if sizeClass == .compact {
+//                            HomescreenPortraitView()
+//                        } else if sizeClass == .regular {
+//                            HomescreenLandscapeView()
+//                        }
             VStack {
                 Text("Westcoast Education")
                     .font(.system(size: 48))
@@ -32,14 +32,7 @@ struct WelcomeScreen: View {
                     .foregroundColor(.white)
             }.padding(.horizontal)
                 .shadow(color: .black, radius: 3)
-            
         }
-    }
-}
-
-struct WelcomeScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        WelcomeScreen()
     }
 }
 
@@ -47,9 +40,9 @@ struct HomescreenPortraitView: View {
     var body: some View {
         Image("home_background")
             .resizable()
-            .aspectRatio(contentMode: .fill)
             .ignoresSafeArea(edges: .top)
             .ignoresSafeArea(edges: .horizontal)
+            .aspectRatio(contentMode: .fill)
     }
 }
 
@@ -61,5 +54,11 @@ struct HomescreenLandscapeView: View {
             .ignoresSafeArea(edges: .top)
             .ignoresSafeArea(edges: .horizontal)
 
+    }
+}
+
+struct WelcomeScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        WelcomeScreen()
     }
 }
